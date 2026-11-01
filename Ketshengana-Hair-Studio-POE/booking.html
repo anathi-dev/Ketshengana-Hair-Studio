@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Book your appointment online at Ketshengana Hair Studio. Calculate your 50% deposit instantly.">
+    <title>Book Now | Ketshengana Hair Studio</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">Ketshengana</div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="booking.html" class="btn-nav">Book Now</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="container">
+        <h2>Online Booking</h2>
+        <p>Please select your desired style. A 50% deposit is required to secure your slot.</p>
+        
+        <form id="booking-form">
+            <label for="name">Full Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email Address:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="service">Select Style (Prices include styling fee, hair excluded):</label>
+            <select id="service" name="service" required>
+                <option value="0">-- Select a Style --</option>
+                <!-- Freehand -->
+                <option value="80">Cornrows (R80)</option>
+                <option value="100">Straight Up (R100)</option>
+                <option value="120">Fishbone Cornrows (R120)</option>
+                <!-- Knotless -->
+                <option value="380">Knotless - Small (R380)</option>
+                <option value="330">Knotless - Medium (R330)</option>
+                <option value="280">Knotless - Large (R280)</option>
+                <option value="240">Knotless - Extra Large (R240)</option>
+                <!-- Kiddies -->
+                <option value="60">Kiddies - Straight Back (R60)</option>
+                <option value="80">Kiddies - Straight Up (R80)</option>
+                <option value="100">Kiddies - Pattern Styles (R100)</option>
+            </select>
+
+            <!-- Dynamic JS Area -->
+            <div id="deposit-display" class="deposit-box">
+                <p>Total Price: <span id="total-price">R0</span></p>
+                <p><strong>Required Deposit (50%): <span id="deposit-amount">R0</span></strong></p>
+            </div>
+
+            <label for="date">Preferred Date:</label>
+            <input type="date" id="date" name="date" required>
+
+            <button type="submit" class="cta-button">Confirm Booking</button>
+        </form>
+        <!-- JS Feedback -->
+        <p id="form-feedback"></p>
+    </main>
+
+    <a href="https://wa.me/27123456789" class="whatsapp-float" target="_blank">Chat on WhatsApp</a>
+
+    <footer>
+        <p>&copy; 2026 Ketshengana Hair Studio. All rights reserved.</p>
+    </footer>
+    <script src="js/script.js"></script>
+</body>
+</html>
