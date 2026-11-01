@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ketshengana Hair Studio - Enquiry</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <div class="logo">
+            <h1>KETSHENGANA</h1>
+            <h2>HAIR STUDIO</h2>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="enquiry.html">Enquiry</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <section class="page-header">
+            <h1>Make an Enquiry</h1>
+            <p>Have questions or ready to book? Fill out the form below or WhatsApp us directly at <strong>0715491889</strong></p>
+        </section>
+
+        <!-- Important Notice -->
+        <section class="notice">
+            <div class="notice-box">
+                <h3>⚠️ Important Information Before Booking</h3>
+                <ul>
+                    <li>📋 Appointments required for all services</li>
+                    <li>💰 50% non-refundable deposit required to secure booking</li>
+                    <li>⏰ Cancellation or rescheduling to be done no later than 24 hours before your appointment</li>
+                    <li>📝 Prices exclude hair piece</li>
+                    <li>📱 Prefer WhatsApp? Contact us directly at <strong>0715491889</strong></li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Enquiry Form -->
+        <section class="enquiry-form">
+            <form action="#" method="POST" id="enquiryForm">
+                <!-- Personal Information -->
+                <fieldset>
+                    <legend>Personal Information</legend>
+                    
+                    <div class="form-group">
+                        <label for="firstName">First Name *</label>
+                        <input type="text" id="firstName" name="firstName" required placeholder="Enter your first name">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="lastName">Last Name *</label>
+                        <input type="text" id="lastName" name="lastName" required placeholder="Enter your last name">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Email Address</label>
+                        <input type="email" id="email" name="email" placeholder="you@example.com">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="phone">Phone Number *</label>
+                        <input type="tel" id="phone" name="phone" required placeholder="071 549 1889">
+                    </div>
+                </fieldset>
+
+                <!-- Enquiry Details -->
+                <fieldset>
+                    <legend>Booking Details</legend>
+
+                    <div class="form-group">
+                        <label for="serviceInterest">Service of Interest *</label>
+                        <select id="serviceInterest" name="serviceInterest" required>
+                            <option value="">-- Please select --</option>
+                            <option value="freehand">Free Hand Styles</option>
+                            <option value="knotless">Knotless Braids</option>
+                            <option value="normal">Normal Braids</option>
+                            <option value="kiddies">Kiddies Styles</option>
+                            <option value="housecall">House Call</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="serviceOption">Specific Style</label>
+                        <input type="text" id="serviceOption" name="serviceOption" placeholder="e.g., Cornrows, Small Knotless, etc.">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="date">Preferred Date</label>
+                        <input type="date" id="date" name="date">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="time">Preferred Time</label>
+                        <input type="time" id="time" name="time">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="message">Your Message *</label>
+                        <textarea id="message" name="message" rows="5" required placeholder="Please provide details about your enquiry..."></textarea>
+                    </div>
+
+                    <div class="form-group checkbox">
+                        <input type="checkbox" id="terms" name="terms" required>
+                        <label for="terms">I have read and agree to the studio policies (50% deposit required, 24-hour cancellation policy) *</label>
+                    </div>
+
+                    <div class="form-group checkbox">
+                        <input type="checkbox" id="subscribe" name="subscribe">
+                        <label for="subscribe">I would like to receive updates and promotions via WhatsApp</label>
+                    </div>
+                </fieldset>
+
+                <!-- Submit Button -->
+                <div class="form-actions">
+                    <button type="submit" class="btn btn-primary">Send Enquiry</button>
+                    <button type="reset" class="btn btn-secondary">Clear Form</button>
+                </div>
+            </form>
+        </section>
+
+        <!-- Alternative Contact Options -->
+        <section class="alternative-contact">
+            <h3>Prefer to Book via WhatsApp?</h3>
+            <div class="contact-options">
+                <div>
+                    <h4>📱 WhatsApp</h4>
+                    <p><strong>0715491889</strong></p>
+                    <p>Quick and easy booking</p>
+                    <a href="https://wa.me/27715491889" class="btn" target="_blank">Chat on WhatsApp</a>
+                </div>
+                <div>
+                    <h4>📞 Call Us</h4>
+                    <p><strong>+27 71 549 1889</strong></p>
+                    <p>Speak directly with our stylist</p>
+                </div>
+                <div>
+                    <h4>📍 Visit Us</h4>
+                    <p>See our <a href="contact.html">Contact Page</a> for locations</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-info">
+                <h4>KETSHENGANA</h4>
+                <p>HAIR STUDIO</p>
+                <p>Where style meets confidence</p>
+            </div>
+            <div class="footer-links">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="enquiry.html">Enquiry</a></li>
+                </ul>
+            </div>
+            <div class="footer-contact">
+                <h4>Contact Us</h4>
+                <p>Phone: +27 71 549 1889</p>
+                <p>Email: info@ketshenganahairstudio.co.za</p>
+                <p>WhatsApp: 0715491889</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Ketshengana Hair Studio. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
